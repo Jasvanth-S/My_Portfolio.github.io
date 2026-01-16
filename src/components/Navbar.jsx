@@ -35,8 +35,9 @@ const Navbar = () => {
         <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 dark:bg-[#050505]/90 backdrop-blur-sm shadow-md py-4' : 'bg-transparent py-6'}`}>
             <div className="container mx-auto px-6 flex justify-between items-center">
                 {/* Logo */}
-                <Link to="hero" smooth={true} duration={500} className="cursor-pointer text-2xl font-bold text-primary">
-                    {siteData.name}
+                <Link to="hero" smooth={true} duration={500} className="cursor-pointer flex flex-col items-end">
+                    <span className="text-2xl font-bold text-primary">{siteData.name}</span>
+                    <span className="text-xs font-medium text-gray-600 dark:text-gray-400 -mt-1">Portfolio</span>
                 </Link>
 
                 {/* Desktop Menu */}
