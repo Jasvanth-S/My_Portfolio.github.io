@@ -32,14 +32,16 @@ const Projects = () => {
                                     >
                                         <FaGithub size={20} />
                                     </a>
-                                    <a
-                                        href={project.live}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="p-3 bg-gray-800 dark:bg-[#1E1E1E] rounded-full text-white hover:text-primary hover:bg-white dark:hover:bg-white transition-colors"
-                                    >
-                                        <FaExternalLinkAlt size={20} />
-                                    </a>
+                                    {project.live && (
+                                        <a
+                                            href={project.live}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="p-3 bg-gray-800 dark:bg-[#1E1E1E] rounded-full text-white hover:text-primary hover:bg-white dark:hover:bg-white transition-colors"
+                                        >
+                                            <FaExternalLinkAlt size={20} />
+                                        </a>
+                                    )}
                                 </div>
                             </div>
 
