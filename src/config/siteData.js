@@ -4,8 +4,8 @@ const siteData = {
     name: "Jasvanth. S",
     roles: [
         {
-            title: "Generative AI Engineer",
-            description: "Architecting next-generation AI systems powered by GPT, Claude, and custom LLMs. Expert in prompt engineering, RAG pipelines, and fine-tuning transformer models to deliver production-ready generative solutions."
+            title: "Full-Stack AI Developer",
+            description: "Engineering intelligent full-stack applications that seamlessly integrate frontend interfaces with AI-driven backends. Specialized in deploying LLMs, RAG systems, agentic AI pipelines, and analytics engines into scalable web platforms using modern frameworks, APIs, and cloud-native architectures."
         },
         {
             title: "AI/ML Engineer",
@@ -39,7 +39,7 @@ const siteData = {
     profilePhoto: "/assets/profile.png", // or "/assets/profile.jpg"
     // CV files for each role - update paths as needed
     cvFiles: [
-        { role: "Generative AI Engineer", file: "/assets/cv/Jasvanth_CV_Generative_AI_Engineer.pdf" },
+        { role: "Full-Stack AI Developer", file: "/assets/cv/Jasvanth_CV_Generative_AI_Engineer.pdf" },
         { role: "AI/ML Engineer", file: "/assets/cv/Jasvanth_CV_AI_ML_Engineer.pdf" },
         { role: "Agentic AI Engineer", file: "/assets/cv/Jasvanth_CV_Agentic_AI_Engineer.pdf" },
         { role: "FARM Stack Developer", file: "/assets/cv/Jasvanth_CV_FARM_Stack_Developer.pdf" },
