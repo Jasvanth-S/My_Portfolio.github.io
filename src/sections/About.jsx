@@ -43,7 +43,7 @@ const About = () => {
     const [showCVMenu, setShowCVMenu] = useState(false);
 
     return (
-        <section id="about" className="py-20 bg-gray-50 dark:bg-transparent/20">
+        <section id="about" className="py-20 bg-transparent">
             <div className="container mx-auto px-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900 dark:text-white">
                     About <span className="text-primary">Me</span>
@@ -57,7 +57,7 @@ const About = () => {
                     {/* Profile image with animated ring */}
                     <div className="relative flex-shrink-0">
                         <div className="absolute inset-0 rounded-full bg-primary/20 blur-xl scale-110 animate-pulse" />
-                        <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-primary shadow-2xl shadow-primary/20 transform hover:scale-105 transition-transform duration-300 relative z-10">
+                        <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-primary shadow-2xl shadow-primary/20 transform hover:scale-105 transition-transform duration-300 relative z-10">
                             <img
                                 src={`${process.env.PUBLIC_URL}${siteData.profilePhoto}`}
                                 alt={siteData.name}
@@ -71,7 +71,7 @@ const About = () => {
                     </div>
 
                     {/* About Text */}
-                    <div className="max-w-xl text-center md:text-left">
+                    <div className="max-w-xl text-center md:text-left relative z-20">
                         <p className="text-lg text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
                             {siteData.bio}
                         </p>

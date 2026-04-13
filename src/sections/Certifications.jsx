@@ -51,7 +51,8 @@ const CertificationCard = ({ cert }) => {
                             alt={cert.name}
                             className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:scale-110 ${idx === imgIndex ? 'opacity-100' : 'opacity-0'}`}
                             onError={(e) => {
-                                e.target.style.display = 'none';
+                                e.target.onerror = null;
+                                e.target.src = "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=800";
                             }}
                         />
                     ))}
@@ -63,7 +64,8 @@ const CertificationCard = ({ cert }) => {
                             alt={cert.name}
                             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                             onError={(e) => {
-                                e.target.style.display = 'none';
+                                e.target.onerror = null;
+                                e.target.src = "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=800";
                             }}
                         />
                     )}

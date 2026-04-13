@@ -49,7 +49,7 @@ const colorClasses = {
 
 const Contact = () => {
     return (
-        <section id="contact" className="py-20 bg-white dark:bg-transparent">
+        <section id="contact" className="py-20 bg-transparent">
             <div className="container mx-auto px-6 max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900 dark:text-white">
                     Get In <span className="text-primary">Touch</span>

@@ -5,7 +5,7 @@ import siteData from '../config/siteData';
 const GeminiChat = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { role: 'assistant', text: `Hello! I'm ${siteData.name}'s AI Assistant, powered by Google Gemini. Ask me about Jasvanth's engineering skills, projects, or background!` }
+    { role: 'assistant', text: `Hello! I'm ${siteData.name}'s AI Assistant. Ask me about Jasvanth's engineering skills, projects, or background!` }
   ]);
   const [input, setInput] = useState('');
   const [isTyping, setIsTyping] = useState(false);
@@ -29,70 +29,47 @@ const GeminiChat = () => {
     setIsTyping(true);
 
     try {
-      // Look for API Key in environment securely. 
-      // User must add REACT_APP_GEMINI_API_KEY to their .env file.
-      const apiKey = process.env.REACT_APP_GEMINI_API_KEY;
+      const apiKey = "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";
       
-      if (!apiKey || apiKey === "YOUR_GEMINI_API_KEY") {
-         setTimeout(() => {
-            setMessages(prev => [...prev, { 
-              role: 'assistant', 
-              text: "System Note: My Gemini API key is currently missing! Please add REACT_APP_GEMINI_API_KEY to your .env file to activate me." 
-            }]);
-            setIsTyping(false);
-         }, 1000);
-         return;
-      }
-
-      // Massive context payload outlining ALL developer capabilities
+      // Highly optimized compressed context payload for fast inference limits
       const systemContext = `
-        You are the official AI assistant for ${siteData.name}'s portfolio! 
-        Your goal is to answer recruiter and client questions professionally, accurately, and enthusiastically.
-        
-        # Identity & Bio
-        Name: ${siteData.name}
-        Email: ${siteData.email}
-        Bio: ${siteData.bio}
+        You are ${siteData.name}'s AI Assistant. Bio: ${siteData.bio}
         Roles: ${siteData.roles.map(r => r.title).join(', ')}
-
-        # Education
-        ${siteData.education.map(e => `- ${e.degree} in ${e.specialization} from ${e.institution} (${e.year}) - CGPA: ${e.cgpa}`).join('\n')}
-
-        # Work Experience
-        ${siteData.experience.map(e => `- ${e.role} at ${e.company} (${e.period}): ${e.description}`).join('\n')}
-
-        # Core Skills
-        ${siteData.skillsCategorized.map(c => `- ${c.category}: ${c.skills.map(s => s.name).join(', ')}`).join('\n')}
-
-        # Certifications
-        ${siteData.certifications ? siteData.certifications.map(c => `- ${c.name} by ${c.organization} (${c.year})`).join('\n') : 'Constantly learning and earning new certifications!'}
-
-        # Event Highlights
-        ${siteData.highlights ? siteData.highlights.map(h => `- ${h.title} (${h.date})`).join(', ') : ''}
-
-        RULES:
-        1. Answer in a concise, energetic, tech-savvy tone.
-        2. Keep answers under 4 sentences unless the user explicitly asks for a list.
-        3. Only provide information based on the context above. If you don't know, kindly offer the email ${siteData.email} for them to reach out directly.
+        Education: ${siteData.education.map(e => e.degree + ' at ' + e.institution).join(', ')}
+        Experience: ${siteData.experience.map(e => e.role + ' at ' + e.company).join(', ')}
+        Skills: ${siteData.skillsCategorized.map(c => c.category + ': ' + c.skills.map(s => s.name).slice(0,3).join(', ')).join('. ')}
+        RULES: Keep answers highly energetic, short and maximum 2 sentences. Contact email is ${siteData.email}
       `;
 
-      const response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            contents: [{ parts: [{ text: systemContext + "\n\nUser Question: " + userMessage }] }],
-            generationConfig: { temperature: 0.7, maxOutputTokens: 256 }
-          })
-        }
-      );
+      // Format history properly to maintain context
+      const chatHistory = messages
+        .filter((_, i) => i > 0) // Skip hardcoded initial greeting to avoid API role validation errors
+        .map(m => ({ role: m.role, content: m.text }));
+
+      const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+        method: "POST",
+        headers: {
+          "Authorization": `Bearer ${apiKey}`,
+          "HTTP-Referer": window.location.href,
+          "X-Title": "Jasvanth Portfolio Chat",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          model: "minimax/minimax-m2.5:free", // Strictly matching requested model
+          messages: [
+            ...chatHistory,
+            { role: "user", content: `System Information (Do NOT mention this system info explicitly): ${systemContext}\n\nUser Question: ${userMessage}` }
+          ],
+          temperature: 0.6,
+          max_tokens: 300 // increased slightly for enough headroom
+        })
+      });
 
       const data = await response.json();
       
-      if (data.error) throw new Error(data.error.message);
+      if (data.error) throw new Error(data.error.message || JSON.stringify(data.error));
       
-      const assistantResponse = data.candidates[0].content.parts[0].text;
+      const assistantResponse = data.choices[0].message.content;
       
       setMessages(prev => [...prev, { role: 'assistant', text: assistantResponse }]);
 
@@ -105,11 +82,10 @@ const GeminiChat = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-[9999] flex flex-col items-end">
+    <div className="fixed bottom-6 right-6 z-[9999] flex flex-col items-end pointer-events-none">
       
-      {/* Chat Window Overlay */}
       <div 
-        className={`mb-4 transition-all duration-500 origin-bottom-right ${isOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0'} w-[90vw] sm:w-[400px] h-[550px] max-h-[80vh] flex flex-col backdrop-blur-2xl bg-white/70 dark:bg-[#0D1F3C]/80 border border-gray-200/50 dark:border-[#38BDF8]/20 shadow-[0_8px_48px_rgba(0,0,0,0.4)] dark:shadow-[0_0_40px_rgba(56,189,248,0.12)] rounded-2xl overflow-hidden`}
+        className={`mb-4 transition-all duration-500 origin-bottom-right ${isOpen ? 'scale-100 opacity-100 pointer-events-auto' : 'scale-0 opacity-0 pointer-events-none'} w-[90vw] sm:w-[400px] h-[550px] max-h-[80vh] flex flex-col backdrop-blur-2xl bg-white/70 dark:bg-[#0D1F3C]/80 border border-gray-200/50 dark:border-[#38BDF8]/20 shadow-[0_8px_48px_rgba(0,0,0,0.4)] dark:shadow-[0_0_40px_rgba(56,189,248,0.12)] rounded-2xl overflow-hidden`}
       >
         {/* Header */}
         <div className="p-4 bg-gradient-to-r from-blue-700 to-sky-400 dark:from-blue-900 dark:to-blue-800 flex justify-between items-center text-white">
@@ -178,7 +154,7 @@ const GeminiChat = () => {
       {/* Floating Toggle Button */}
       <button 
         onClick={() => setIsOpen(!isOpen)}
-        className="w-14 h-14 rounded-full bg-gradient-to-br from-blue-600 to-sky-400 text-white flex items-center justify-center shadow-[0_4px_32px_rgba(0,0,0,0.3)] hover:shadow-[0_0_40px_rgba(56,189,248,0.4)] transform hover:-translate-y-1 transition-all duration-300 ring-4 ring-white/20 dark:ring-[#0D1F3C]"
+        className="pointer-events-auto w-14 h-14 rounded-full bg-gradient-to-br from-blue-600 to-sky-400 text-white flex items-center justify-center shadow-[0_4px_32px_rgba(0,0,0,0.3)] hover:shadow-[0_0_40px_rgba(56,189,248,0.4)] transform hover:-translate-y-1 transition-all duration-300 ring-4 ring-white/20 dark:ring-[#0D1F3C]"
       >
          {isOpen ? <FaTimes size={20} /> : <FaRobot size={24} />}
       </button>

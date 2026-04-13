@@ -4,7 +4,7 @@ import siteData from '../config/siteData';
 
 const Experience = () => {
     return (
-        <section id="experience" className="py-20 bg-white dark:bg-transparent">
+        <section id="experience" className="py-20 bg-transparent">
             <div className="container mx-auto px-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900 dark:text-white">
                     Work <span className="text-primary">Experience</span>
@@ -14,7 +14,7 @@ const Experience = () => {
                     {/* Timeline */}
                     <div className="relative">
                         {/* Vertical Line */}
-                        <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-1 h-full bg-primary/20"></div>
+                        <div className="absolute left-[3px] md:left-1/2 transform md:-translate-x-1/2 w-1 h-full bg-primary/20"></div>
 
                         {siteData.experience.map((exp, index) => (
                             <div
@@ -22,7 +22,7 @@ const Experience = () => {
                                 className={`relative mb-12 ${index % 2 === 0 ? 'md:pr-1/2' : 'md:pl-1/2 md:ml-auto'}`}
                             >
                                 {/* Timeline Dot */}
-                                <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white dark:border-[#0A192F] z-10"></div>
+                                <div className="absolute left-[-2px] md:left-1/2 transform md:-translate-x-1/2 w-[14px] h-[14px] bg-primary rounded-full border-[3px] border-white dark:border-[#0A192F] z-10 top-2 mt-1 md:mt-0"></div>
 
                                 {/* Content Card */}
                                 <div className={`ml-8 md:ml-0 ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'}`}>

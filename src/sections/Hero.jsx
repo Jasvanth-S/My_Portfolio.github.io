@@ -38,8 +38,8 @@ const Hero = () => {
                     </h3>
                     
                     {/* Locked Dimension Container for Typography Shifts */}
-                    <div className="h-[100px] sm:h-[120px] md:h-[150px] lg:h-[180px] w-full flex items-center justify-center">
-                        <h1 className="font-alien text-6xl sm:text-7xl md:text-8xl lg:text-[7.5rem] font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-slate-900 via-blue-900 to-sky-600 dark:from-white dark:via-[#E2E8F0] dark:to-[#00B4D8] py-4 px-4 md:px-8 leading-normal lg:leading-[1.1] drop-shadow-sm dark:drop-shadow-md">
+                    <div className="min-h-[100px] w-full flex items-center justify-center">
+                        <h1 className="font-alien text-4xl sm:text-6xl md:text-8xl lg:text-[7.5rem] font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-slate-900 via-blue-900 to-sky-600 dark:from-white dark:via-[#E2E8F0] dark:to-[#00B4D8] py-2 px-2 md:px-8 leading-tight drop-shadow-sm dark:drop-shadow-md">
                             {siteData.name}
                         </h1>
                     </div>
@@ -62,8 +62,8 @@ const Hero = () => {
                         </div>
                         
                         {/* Elite Minimalist Description */}
-                        <div className="max-w-2xl px-6 rounded-2xl relative">
-                            <p className="font-body text-sm sm:text-base md:text-lg text-gray-700 dark:text-[#A8B2D1] leading-[1.8] font-medium md:font-normal text-center">
+                        <div className="w-full max-w-2xl px-4 sm:px-6 rounded-2xl relative">
+                            <p className="font-body text-[0.9rem] sm:text-base md:text-lg text-gray-700 dark:text-[#A8B2D1] leading-[1.8] font-medium md:font-normal text-center">
                                 {currentRole.description}
                             </p>
                         </div>
@@ -71,16 +71,16 @@ const Hero = () => {
                 </div>
 
                 {/* Ultra-Premium CTA Buttons */}
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-6 z-20 relative">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mt-8 z-20 relative w-full px-4 sm:px-0">
                     <Link
                         to="/creations"
-                        className="px-8 py-4 rounded-full bg-blue-900 text-white dark:bg-white dark:text-[#0A192F] font-bold text-xs sm:text-sm tracking-[0.2em] uppercase transition-all duration-300 hover:bg-blue-700 dark:hover:bg-sky-400 hover:text-white shadow-md hover:shadow-xl dark:shadow-[0_0_15px_rgba(255,255,255,0.1)] dark:hover:shadow-[0_0_25px_rgba(56,189,248,0.5)] transform hover:-translate-y-1"
+                        className="w-full sm:w-auto text-center px-6 py-4 rounded-full bg-blue-900 text-white dark:bg-white dark:text-[#0A192F] font-bold text-xs sm:text-sm tracking-[0.2em] uppercase transition-all duration-300 hover:bg-blue-700 dark:hover:bg-sky-400 hover:text-white shadow-md hover:shadow-xl dark:shadow-[0_0_15px_rgba(255,255,255,0.1)] dark:hover:shadow-[0_0_25px_rgba(56,189,248,0.5)] transform hover:-translate-y-1"
                     >
                         Explore Project
                     </Link>
                     <Link
                         to="/connect"
-                        className="px-8 py-4 rounded-full border border-blue-900/20 text-blue-900 dark:border-sky-200/30 dark:text-white font-bold dark:font-medium text-xs sm:text-sm tracking-[0.2em] uppercase transition-all duration-300 hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50 dark:hover:border-sky-400 dark:hover:text-sky-400 dark:hover:bg-sky-400/10 transform hover:-translate-y-1"
+                        className="w-full sm:w-auto text-center px-6 py-4 rounded-full border border-blue-900/20 text-blue-900 dark:border-sky-200/30 dark:text-white font-bold dark:font-medium text-xs sm:text-sm tracking-[0.2em] uppercase transition-all duration-300 hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50 dark:hover:border-sky-400 dark:hover:text-sky-400 dark:hover:bg-sky-400/10 transform hover:-translate-y-1"
                     >
                         Initialize Contact
                     </Link>

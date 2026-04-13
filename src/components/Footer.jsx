@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link } from 'react-scroll';
 import siteData from '../config/siteData';
 
 const Footer = () => {
     const year = new Date().getFullYear();
     return (
-        <footer className="bg-gray-100 dark:bg-transparent py-10 border-t border-gray-300 dark:border-gray-900">
+        <footer className="bg-gray-100 dark:bg-transparent py-10 border-t border-gray-300 dark:border-gray-900 relative z-20">
             <div className="container mx-auto px-6">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-6">
                     <div className="text-center md:text-left">
@@ -16,19 +15,22 @@ const Footer = () => {
                         <span>Last updated: March 2026</span>
                         <span>·</span>
                         <a
-                            href={`${process.env.PUBLIC_URL}/assets/cv/Jasvanth_CV_Full_Stack_AI_Developer.pdf`}
+                            href={`${process.env.PUBLIC_URL}${siteData.cvFiles[0].file}`}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-primary hover:underline font-semibold"
+                            className="text-primary hover:underline font-semibold relative z-50 pointer-events-auto"
                         >
                             View Resume ↗
                         </a>
                     </div>
                 </div>
                 <div className="flex justify-center mb-4">
-                    <Link to="hero" smooth={true} duration={500} className="text-gray-500 dark:text-gray-500 hover:text-primary cursor-pointer transition-colors text-sm">
+                    <button 
+                        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} 
+                        className="text-gray-500 dark:text-gray-500 hover:text-primary cursor-pointer transition-colors text-sm bg-transparent border-none outline-none relative z-50 pointer-events-auto"
+                    >
                         ↑ Back to Top
-                    </Link>
+                    </button>
                 </div>
                 <p className="text-gray-500 dark:text-gray-600 text-sm text-center">
                     © {year} {siteData.name}. All rights reserved. Crafted with precision.

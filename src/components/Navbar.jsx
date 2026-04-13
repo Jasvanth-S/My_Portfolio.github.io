@@ -34,7 +34,7 @@ const Navbar = () => {
             <div className="container mx-auto px-6 flex justify-between items-center">
                 {/* Logo */}
                 <Link to="/who-im" className="cursor-pointer flex flex-col items-end">
-                    <span className="text-2xl font-bold text-primary">{siteData.name}</span>
+                    <span className="font-signature text-2xl font-bold text-primary">{siteData.name}</span>
                     <span className="text-xs font-medium text-gray-600 dark:text-gray-400 -mt-1">AI Engineer</span>
                 </Link>
 
@@ -66,13 +66,16 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="md:hidden absolute top-full left-0 w-full bg-white/80 dark:bg-[#0A0A0A]/80 backdrop-blur-2xl backdrop-saturate-[180%] shadow-lg py-6 flex flex-col items-center space-y-4 border-t border-b border-black/5 dark:border-white/5">
+                <div className="md:hidden absolute top-full left-0 w-full bg-white/95 dark:bg-[#050505]/95 backdrop-blur-3xl shadow-lg pb-6 pt-4 flex flex-col items-center space-y-3 border-b border-black/5 dark:border-white/5">
                     {navLinks.map((link) => (
                         <NavLink
                             key={link.name}
                             to={link.to}
-                            className={({ isActive }) => `px-8 py-3 rounded-2xl transition-all duration-300 text-lg font-semibold w-64 text-center ${isActive ? 'bg-black/5 dark:bg-white/10 text-gray-900 dark:text-white shadow-sm ring-1 ring-black/5 dark:ring-white/10' : 'text-gray-500 dark:text-gray-400 hover:bg-black/5 dark:hover:bg-white/5 hover:text-gray-900 dark:hover:text-white'}`}
-                            onClick={() => setIsOpen(false)}
+                            className={({ isActive }) => `px-6 py-3.5 rounded-xl transition-all duration-300 text-base font-semibold w-[90%] text-center ${isActive ? 'bg-black/5 dark:bg-white/10 text-gray-900 dark:text-white ring-1 ring-black/5 dark:ring-white/10 shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:bg-black/5 dark:hover:bg-white/5 hover:text-gray-900 dark:hover:text-white'}`}
+                            onClick={() => {
+                                setIsOpen(false);
+                                window.scrollTo({ top: 0, behavior: 'smooth' });
+                            }}
                         >
                             {link.name}
                         </NavLink>
