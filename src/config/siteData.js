@@ -115,7 +115,6 @@ const siteData = {
             location: "Onsite",
             images: [
                 "https://www.codewar.in/img/CodeWarv1.0/img%20(17).png",
-                "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=600",
                 "https://www.codewar.in/img/CodeWarv1.0/img%20(6).jpg"
             ],
             description: "Participated in a Python-based problem-solving event, successfully addressing the given challenge while actively engaging throughout the session. This experience marked our first event and provided valuable exposure to collaborative learning.",
@@ -324,13 +323,6 @@ const siteData = {
             link: "#" // Insert real credential link here
         },
         {
-            name: "Green Skills and AI Foundation",
-            organization: "Edunet Foundation - Skil4Future",
-            year: "2024",
-            image: "https://media.licdn.com/dms/image/v2/D5622AQEIsUL9eezkhQ/feedshare-shrink_2048_1536/B56ZfE9KToHoAw-/0/1751356058345?e=1776297600&v=beta&t=u9p7eowQxEthy9e14QYuxhGVHbhn25fFpThiiPVVRc4",
-            link: "#" // Insert real credential link here
-        },
-        {
             name: "Full-Stack Master Class",
             organization: "Noviteh",
             year: "2025",
@@ -394,6 +386,13 @@ const siteData = {
             ],
             link: "#" // Insert real credential link here
         },
+        {
+            name: "Green Skills and AI Foundation",
+            organization: "Edunet Foundation - Skil4Future",
+            year: "2024",
+            image: "https://media.licdn.com/dms/image/v2/D5622AQEIsUL9eezkhQ/feedshare-shrink_2048_1536/B56ZfE9KToHoAw-/0/1751356058345?e=1776297600&v=beta&t=u9p7eowQxEthy9e14QYuxhGVHbhn25fFpThiiPVVRc4",
+            link: "#" // Insert real credential link here
+        }
     ],
 
     // ---------------------------------------------------------

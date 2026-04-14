@@ -9,10 +9,10 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-6">
                     <div className="text-center md:text-left">
                         <p className="font-bold text-gray-800 dark:text-white text-base">{siteData.name}</p>
-                        <p className="text-xs text-gray-500 dark:text-gray-500 mt-0.5">Full-Stack AI Developer · Freelancer · Researcher</p>
+                        <p className="text-xs text-gray-500 dark:text-gray-500 mt-0.5">Full-Stack AI Developer <b>·</b> Freelancer <b>·</b> Researcher</p>
                     </div>
                     <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-500">
-                        <span>Last updated: March 2026</span>
+                        <span>Last updated: <i>April 2026</i></span>
                         <span>·</span>
                         <a
                             href={`${process.env.PUBLIC_URL}${siteData.cvFiles[0].file}`}
@@ -33,7 +33,7 @@ const Footer = () => {
                     </button>
                 </div>
                 <p className="text-gray-500 dark:text-gray-600 text-sm text-center">
-                    © {year} {siteData.name}. All rights reserved. Crafted with precision.
+                    © {year} {siteData.name}. All rights reserved.
                 </p>
             </div>
         </footer>
