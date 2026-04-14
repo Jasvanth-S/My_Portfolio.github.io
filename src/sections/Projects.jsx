@@ -9,6 +9,9 @@ const getMediaPreviewUrl = (url) => {
     if (match && match[1]) {
         return `https://drive.google.com/thumbnail?id=${match[1]}&sz=w1000`;
     }
+    if (url.startsWith('/assets/')) {
+        return process.env.PUBLIC_URL + url;
+    }
     return url;
 };
 

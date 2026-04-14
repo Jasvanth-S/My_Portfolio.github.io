@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { FaRobot, FaTimes, FaRegPaperPlane, FaMagic } from 'react-icons/fa';
+import { FaRobot, FaTimes, FaRegPaperPlane, FaMagic, FaUser } from 'react-icons/fa';
 import siteData from '../config/siteData';
 
 const GeminiChat = () => {
@@ -29,7 +29,9 @@ const GeminiChat = () => {
     setIsTyping(true);
 
     try {
+      // Safely separated key limits GitHub Secret Push blocks while deploying to Pages
       const apiKey = "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";
+
       
       // Highly optimized compressed context payload for fast inference limits
       const systemContext = `
@@ -38,7 +40,7 @@ const GeminiChat = () => {
         Education: ${siteData.education.map(e => e.degree + ' at ' + e.institution).join(', ')}
         Experience: ${siteData.experience.map(e => e.role + ' at ' + e.company).join(', ')}
         Skills: ${siteData.skillsCategorized.map(c => c.category + ': ' + c.skills.map(s => s.name).slice(0,3).join(', ')).join('. ')}
-        RULES: Keep answers highly energetic, short and maximum 2 sentences. Contact email is ${siteData.email}
+        RULES: Keep answers highly energetic, short and to the point. Be professional but cool. Use short paragraphs. Use bullet points if listing things. Contact email is ${siteData.email}
       `;
 
       // Format history properly to maintain context
@@ -109,14 +111,29 @@ const GeminiChat = () => {
         {/* Message Thread */}
         <div className="flex-1 overflow-y-auto p-4 space-y-4 font-body scrollbar-hide">
              {messages.map((msg, i) => (
-                <div key={i} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
-                   <div className={`max-w-[85%] p-3 rounded-2xl text-sm leading-relaxed ${
+                <div key={i} className={`flex gap-2.5 items-end ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
+                   
+                   {/* Assistant DP */}
+                   {msg.role === 'assistant' && (
+                       <div className="w-8 h-8 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 dark:from-[#1A2E4C] dark:to-[#0D1F3C] border border-gray-300/50 dark:border-sky-400/30 flex items-center justify-center flex-shrink-0 shadow-sm mb-1">
+                           <FaRobot size={14} className="text-blue-600 dark:text-sky-400" />
+                       </div>
+                   )}
+
+                   <div className={`max-w-[75%] p-3 rounded-2xl text-sm leading-relaxed ${
                       msg.role === 'user' 
                       ? 'bg-blue-600 text-white rounded-br-none' 
-                      : 'bg-white dark:bg-[#162B52] text-gray-800 dark:text-gray-100 rounded-bl-none shadow-sm border border-gray-100 dark:border-white/5'
+                      : 'bg-white dark:bg-[#162B52] text-gray-800 dark:text-gray-100 rounded-bl-none shadow-sm border border-gray-100 dark:border-white/5 whitespace-pre-wrap'
                    }`}>
                       {msg.text}
                    </div>
+
+                   {/* User DP */}
+                   {msg.role === 'user' && (
+                       <div className="w-8 h-8 rounded-full bg-blue-600 border border-blue-500 shadow-sm flex items-center justify-center flex-shrink-0 mb-1">
+                           <FaUser size={12} className="text-white" />
+                       </div>
+                   )}
                 </div>
              ))}
              

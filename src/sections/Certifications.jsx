@@ -10,6 +10,10 @@ const formatImageUrl = (url) => {
         // Use the thumbnail endpoint as it bypasses recent Google hotlink restrictions
         return `https://drive.google.com/thumbnail?id=${match[1]}&sz=w1000`;
     }
+    // Prefix local paths with process.env.PUBLIC_URL so they don't break on GitHub pages (e.g., /portfolio)
+    if (url.startsWith('/assets/')) {
+        return process.env.PUBLIC_URL + url;
+    }
     return url;
 };
 

@@ -21,8 +21,8 @@ const ParticleField = ({ isDark }) => {
             <Points ref={ref} positions={sphere} stride={3} frustumCulled={false}>
                 <PointMaterial
                     transparent
-                    // Dark theme: Glowing Cyan. Light theme: Premium Soft Azure Blue
-                    color={isDark ? "#00F0FF" : "#0284C7"} 
+                    // Dark theme: Glowing Cyan. Light theme: Deep Navy for elegance and contrast
+                    color={isDark ? "#00F0FF" : "#0A192F"} 
                     size={isDark ? 0.004 : 0.005} // Slightly thicker in light mode for visibility
                     sizeAttenuation={true}
                     depthWrite={false}

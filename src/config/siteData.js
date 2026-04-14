@@ -269,10 +269,17 @@ const siteData = {
 
     certifications: [
         {
+            name: "Gen AI Engineering Mastermind",
+            organization: "Outskill",
+            year: "2026",
+            image: "https://media.licdn.com/dms/image/v2/D562DAQF0cXcyRUXaEg/profile-treasury-image-shrink_1920_1920/B56Z182XPiHAAg-/0/1775916120314?e=1776787200&v=beta&t=foUSQK7nQvJNk2wqr99l-6fSlltV6D8xXleAARLRsPU",
+            link: "#" // Insert real credential link here
+        },
+        {
             name: "The Complete React.js Beginner Course",
             organization: "Udemy",
             year: "2026",
-            image: "https://media.licdn.com/dms/image/v2/D562DAQFLb7ENt2SUjA/profile-treasury-document-cover-images_1920/B56ZyJPGMEG4BM-/0/1771828964259?e=1774972800&v=beta&t=cIAWgRNox3rrEcaGyhIffxosgc88lvrHy8puoypL1VY",
+            image: "https://media.licdn.com/dms/image/v2/D562DAQFLb7ENt2SUjA/profile-treasury-document-images_1280/B56ZyJPGMEG4AU-/1/1771828964252?e=1776902400&v=beta&t=dD0AiLjo5d3ZevbmJExDZTYM8xARQY0Zi2HxNavf24U",
             link: "#" // Insert real credential link here
         },
         {
@@ -286,7 +293,7 @@ const siteData = {
             name: "Master class on Data Science using Python",
             organization: "Udemy",
             year: "2025",
-            image: "https://media.licdn.com/dms/image/v2/D562DAQFCJj1qFnnT8A/profile-treasury-image-shrink_8192_8192/B56ZlHgdvpKAAg-/0/1757841317832?e=1774976400&v=beta&t=YBT7ttUq4_j0uaoCIBGpY4KrPSCySh3VyQ02LW_jtaY",
+            image: "https://media.licdn.com/dms/image/v2/D562DAQFYHWU0f1JckA/profile-treasury-image-shrink_1920_1920/B56ZgZXB9IHQAc-/0/1752772125375?e=1776787200&v=beta&t=84sOnl4cLeewJ6XZUF8-2oIgtAhNhqzjnQxgGWOsKm8",
             link: "#" // Insert real credential link here
         },
         {
@@ -300,7 +307,7 @@ const siteData = {
             name: "Oracle Certified Foundations Associate",
             organization: "Oracle University",
             year: "2025",
-            image: "https://media.licdn.com/dms/image/v2/D562DAQHLu_zdtJjyxg/profile-treasury-image-shrink_1280_1280/B56Zf3sQYtHoAQ-/0/1752207264772?e=1774976400&v=beta&t=FJCrhA8NAm2rPGwNXH8hN7qs_eYB2_1nP2G8SxpKhLQ",
+            image: "https://media.licdn.com/dms/image/v2/D562DAQHLu_zdtJjyxg/profile-treasury-image-shrink_1280_1280/B56Zf3sQYtHoAQ-/0/1752207264772?e=1776787200&v=beta&t=zVsmQ9bRgvsjsTPScdhXTtjwESDyKuA-fFeYvKsnLHc",
             link: "#" // Insert real credential link here
         },
         {
@@ -451,7 +458,7 @@ const siteData = {
             summary: "End-to-End E-commerce Platform Development",
             contribution: "Designed and developed a full-stack e-commerce website using Next.js and Tailwind CSS, with role based authentication and integrating Cashfree for secure online payments and seamless checkout experience.",
             impact: "Enabled the client to establish a scalable online presence, streamline product sales and improve customer conversion rates.",
-            image: "https://drive.google.com/file/d/1GMkOqol79gFsRWDYbz7H2MlDW05M1Fel/view?usp=sharing",
+            image: "https://drive.google.com/uc?export=view&id=1GMkOqol79gFsRWDYbz7H2MlDW05M1Fel",
             link: "https://www.3dprintwithsruthi.in/",
             category: "Full Stack Development"
         },
@@ -460,7 +467,7 @@ const siteData = {
             summary: "Event Management and Registration Platform for Futurix 2026",
             contribution: "Developed a dynamic event website to showcase event details, department and college information, along with an integrated registration and payment system for seamless participant onboarding.",
             impact: "Streamlined event promotions and registrations, improving participant engagement and enabling efficient digital management of Futurix 2026.",
-            image: "https://drive.google.com/file/d/1M4sBBsNbVJqSBGlcW3VkUruJw3wqNge1/view?usp=sharing",
+            image: "https://drive.google.com/uc?export=view&id=1M4sBBsNbVJqSBGlcW3VkUruJw3wqNge1",
             link: "https://act-blogs.github.io/FuturiX_2026/",
             category: "Web Development"
         },
@@ -469,7 +476,7 @@ const siteData = {
             summary: "Premium Digital Subscription Retailer, Automated Account Creation and Status Tracking System",
             contribution: "Developed dedicated account creation and status tracking pages for Adobe and Canva premium subscriptions, integrated with WhatsApp automation to manage and update order status in real time.",
             impact: "Reduced manual processing, improved operational efficiency and enabled seamless communication and status updates for customers.",
-            image: "https://drive.google.com/file/d/1ZV3LwcEBSBssdBzzFmV5e-YfaW5K3M-_/view?usp=sharing",
+            image: "https://drive.google.com/uc?export=view&id=1ZV3LwcEBSBssdBzzFmV5e-YfaW5K3M-_",
             link: "https://adobe-seller--jasvanth1010.replit.app/",
             category: "Automation & Web Development"
         }
@@ -509,7 +516,7 @@ const siteData = {
             event: "SIH - 2024",
             focus: "Easy_ML is a user-friendly, resource-efficient platform designed to democratize AI by allowing non-technical users to easily upload data, auto-train models, and gain automated insights.",
             link: "#",
-            image: "https://drive.google.com/file/d/1eO1s1ikjQDoVZTJ9X7i15XEvqs4wySRc/view?usp=sharing"
+            image: "https://drive.google.com/uc?export=view&id=1eO1s1ikjQDoVZTJ9X7i15XEvqs4wySRc"
         },
         {
             topic: "Data Science in Industry 4.0",
