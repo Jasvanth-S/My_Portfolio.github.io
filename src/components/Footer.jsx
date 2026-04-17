@@ -15,12 +15,11 @@ const Footer = () => {
                         <span>Last updated: <i>April 2026</i></span>
                         <span>·</span>
                         <a
-                            href={`${process.env.PUBLIC_URL}${siteData.cvFiles[0].file}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            href={`${process.env.PUBLIC_URL}/assets/cv/Jasvanth_CV_Super_Resume.pdf`}
+                            download="Jasvanth_CV_Super_Resume.pdf"
                             className="text-primary hover:underline font-semibold relative z-50 pointer-events-auto"
                         >
-                            View Resume ↗
+                            View Resume ↓
                         </a>
                     </div>
                 </div>
