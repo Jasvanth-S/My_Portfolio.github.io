@@ -66,7 +66,7 @@ const ProfessionalEngagements = () => {
     };
 
     return (
-        <section id="engagements" className="py-20 bg-white dark:bg-transparent">
+        <section id="engagements" className="py-20 bg-white/30 dark:bg-transparent">
             <div className="container mx-auto px-6 relative">
                 <style>{`
                     .hide-scroll::-webkit-scrollbar { display: none; }

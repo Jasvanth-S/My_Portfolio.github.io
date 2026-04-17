@@ -43,7 +43,7 @@ const Research = () => {
     };
 
     return (
-        <section id="research" className="py-20 bg-gray-50 dark:bg-transparent/20">
+        <section id="research" className="py-20 bg-white/30 dark:bg-transparent/20">
             <div className="container mx-auto px-6 relative">
                 <style>{`
                     .hide-scroll::-webkit-scrollbar { display: none; }

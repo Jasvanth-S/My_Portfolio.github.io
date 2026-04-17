@@ -143,7 +143,7 @@ const Highlights = () => {
     };
 
     return (
-        <section id="highlights" className="py-20 bg-white dark:bg-transparent">
+        <section id="highlights" className="py-20 bg-white/30 dark:bg-secondary/10">
             <div className="container mx-auto px-6 relative">
                 <style>{`
                     .hide-scroll::-webkit-scrollbar { display: none; }

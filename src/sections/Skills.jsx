@@ -19,7 +19,7 @@ const roadmap = [
 
 const Skills = () => {
     return (
-        <section id="skills" className="py-20 bg-gray-50 dark:bg-transparent/20 hover-trigger">
+        <section id="skills" className="py-20 bg-white/30 dark:bg-transparent/20 hover-trigger">
             <style>{`
                 .group:hover .animate-bar-fill {
                     animation: fillBar 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;

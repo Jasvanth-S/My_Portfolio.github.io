@@ -4,7 +4,7 @@ import siteData from '../config/siteData';
 
 const Education = () => {
     return (
-        <section id="education" className="py-20 bg-gray-50 dark:bg-transparent/20">
+        <section id="education" className="py-20 bg-white/30 dark:bg-secondary/10">
             <div className="container mx-auto px-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900 dark:text-white">
                     <span className="text-primary">Education</span>
