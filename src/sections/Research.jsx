@@ -106,7 +106,7 @@ const Research = () => {
                                         </div>
 
                                         <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 pl-8">
-                                            {res.summary}
+                                            <i>{res.summary}</i>
                                         </p>
                                     </div>
 

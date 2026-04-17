@@ -110,94 +110,93 @@ const siteData = {
     ],
 
     highlights: [
-        {
-            title: "PCET Code War  v1.0",
-            location: "Onsite",
-            images: [
-                "https://www.codewar.in/img/CodeWarv1.0/img%20(17).png",
-                "https://www.codewar.in/img/CodeWarv1.0/img%20(6).jpg"
-            ],
-            description: "Participated in a Python-based problem-solving event, successfully addressing the given challenge while actively engaging throughout the session. This experience marked our first event and provided valuable exposure to collaborative learning.",
-            date: "DEC 2023"
-        },
-        {
-            title: "Youth for Climate Action",
-            location: "Onsite",
-            images: [
-                "https://media.licdn.com/dms/image/v2/D5622AQGSIIIW6b4JmQ/feedshare-shrink_2048_1536/B56Znon6ABG4A0-/0/1760544436183?e=1776297600&v=beta&t=oMruytAuhJJiTJF9kYcRb6L_iM59Jd4MEzhnPlwUUuA",
-                "https://media.licdn.com/dms/image/v2/D5622AQEzG0WKfr4xMg/feedshare-shrink_2048_1536/B56Znon6B2JoA0-/0/1760544433421?e=1776297600&v=beta&t=S0pU83jRtmuUCNxXmPz-uub4-7qEpzFGUeGRplVKk5o",
-                "https://media.licdn.com/dms/image/v2/D5622AQEWYuT-ANfuGA/feedshare-shrink_2048_1536/B56Znon6BCJkAw-/0/1760544435325?e=1776297600&v=beta&t=qgwuqe9aFbIkHB0nzuJ3Dhan83rRP1SlMNVV5AZQNFU"
-            ],
-            description: "Attended Youth for Climate Action — Lead the Change at Sri Eshwar College, a dynamic summit in collaboration with Anna University focused on climate-smart campus initiatives. Gained valuable insights from municipal leaders, academia, and student innovators on driving practical, low-carbon solutions. An inspiring experience connecting policy, research, and youth-led impact.",
-            date: "Jan 2025"
-        },
-        {
-            title: "ZARAK 2K25 - HCAS",
-            location: "Onsite",
-            images: [
-                "https://media.licdn.com/dms/image/v2/D5622AQHa_VxLCDkF3A/feedshare-shrink_2048_1536/B56ZmMX5PRHUAw-/0/1758996706612?e=1776297600&v=beta&t=fYx3RQt_M6slFnvbDxtutCSP5KSgf8fiybZuE_IdvVs",
-                "https://media.licdn.com/dms/image/v2/D5622AQHlPX1c9QqBhg/feedshare-shrink_2048_1536/B56ZmMX5PUHAAw-/0/1758996699216?e=1776297600&v=beta&t=8QJav6vHfcyUIRHIPrM_nJrXUOK6kPeYj2XtmN1gi2w",
-                "https://media.licdn.com/dms/image/v2/D5622AQHlwcKtbSjgtw/feedshare-shrink_2048_1536/B56ZmMX5O2JkAw-/0/1758996700843?e=1776297600&v=beta&t=EVP_x2wUxCKkOYX74JyLWOqijB8ur9gyL-yscOFXwfo",
-                "https://media.licdn.com/dms/image/v2/D5622AQFmHZ7TraHvsg/feedshare-shrink_2048_1536/B56ZmMX5OvJsAw-/0/1758996701652?e=1776297600&v=beta&t=nCdi3YKDCSzOPFh7LR6zVPf-6_yt3GdZqm5DZDpRKrg"
-            ],
-            description: "Presented on “The Role of Data Science in Industry 4.0 Manufacturing,” showcasing how AI, IoT and data-driven insights enable predictive maintenance, real-time monitoring and smarter operations. Gained valuable exposure to smart manufacturing innovations and strengthened my vision of integrating AI with industrial transformation.",
-            date: "Sep 2025"
-        },
-        {
-            title: "TN Global Startup Summit 2025",
-            location: "Onsite",
-            images: [
-                "https://media.licdn.com/dms/image/v2/D5622AQE8Bx5GQ0l5rw/feedshare-shrink_2048_1536/B56ZnoqtXsIsAw-/0/1760545135383?e=1776297600&v=beta&t=RvvuKzm7BCQnfDOTEc9ASwTjfr-g_AfF8qDWhXUyrck",
-                "https://media.licdn.com/dms/image/v2/D5622AQGU2WQR4twtBg/feedshare-shrink_2048_1536/B56ZnoqtW.JYA4-/0/1760545135547?e=1776297600&v=beta&t=HDheHsG70t360Lfr6E4w4C9ffHWcF757wm1xy5lvPEE",
-                "https://media.licdn.com/dms/image/v2/D5622AQHAmQN55-Ppjw/feedshare-shrink_1280/B56ZnoqtXVHIAs-/0/1760545135598?e=1776297600&v=beta&t=r-5BHc55XVTjS-D3FO700iTn-4JEeAkNqgEnYox6iWs",
-                "https://media.licdn.com/dms/image/v2/D5622AQHGBwrd-WQFnA/feedshare-shrink_2048_1536/B56ZnoqtXbKUAw-/0/1760545135694?e=1776297600&v=beta&t=WV0mk1Cdx5TWr3hv0SD4szU2NS5-OkoLRdpAzdfI-IQ"
-            ],
-            description: "Attended the Tamil Nadu Global Startup Summit 2025, gaining exposure to cutting-edge innovations, startup ecosystems and global entrepreneurial insights. Engaged with industry leaders, expanded my network and strengthened my perspective on building impactful, scalable solutions.",
-            date: "Oct 2025"
-        },
-        {
-            title: "Smart India Hackathon",
-            location: "Internal Presentation",
-            images: [
-                "https://media.licdn.com/dms/image/v2/D5622AQELOGsOM1cLkA/feedshare-shrink_1280/B56ZmMTLDpJkAs-/0/1758995460966?e=1776297600&v=beta&t=h20up5wB_mTEAvZDxmLgEHXJahLL0oNnwwxwZdvYAig",
-            ],
-            description: "Presented “EasyML - Democratizing AI for Everyone” at Smart India Hackathon prelims, showcasing a scalable platform that simplifies AI/ML for non-technical users. Gained hands-on experience in building, deploying and pitching an end-to-end solution, strengthening my focus on accessible and impactful AI innovation.",
-            date: "Oct 2025"
-        },
-        {
-            title: "Youth Talk 2025",
-            location: "Onsite",
-            images: [
-                "https://media.licdn.com/dms/image/v2/D5622AQHBxGlgcUBRWA/feedshare-shrink_2048_1536/B56Zno07hnHUAw-/0/1760547817100?e=1776297600&v=beta&t=vu1kmHnWVTKdiZbJ301ZBhFl2n-aISRVHAe_UdUPv2o",
-                "https://media.licdn.com/dms/image/v2/D5622AQFoyyyw-I_TLw/feedshare-shrink_1280/B56Zno07gZJkAs-/0/1760547814250?e=1776297600&v=beta&t=69dQrzbrMRACyiPHlMoziw1pgiz9jcrXqj8Luomeaqo",
-                "https://media.licdn.com/dms/image/v2/D5622AQFXP2LEW5z39w/feedshare-shrink_1280/B56Zno07iGI8As-/0/1760547814909?e=1776297600&v=beta&t=jR7cFZM3aAMbSuG_XV7g4dXDKdi6UPbXJTo00uDsyvI",
-                "https://media.licdn.com/dms/image/v2/D5622AQEWMx6PbqZqzw/feedshare-shrink_1280/B56Zno07hYI0As-/0/1760547814961?e=1776297600&v=beta&t=jlS6JxIMqUpqbXwo2MYq91aJhuUBdX0apHbKcL6uZYg"
-            ],
-            description: "Attended Youth Talk 2025 at Coimbatore, gaining insights into the power of communication, leadership and impactful storytelling among young innovators. Inspired to enhance my public speaking and expression skills while embracing opportunities that foster confidence, clarity and meaningful influence.",
-            date: "Nov 2025"
-        },
-        {
-            title: "CIT Alumni Meet 2026",
-            location: "Onsite",
-            images: [
-                "https://media.licdn.com/dms/image/v2/D5622AQFsi9c1OoWK6g/feedshare-shrink_2048_1536/B56Z0JKDwgH0Ao-/0/1773975125568?e=1776297600&v=beta&t=pq40uWZyTIy7iU4OYt93vk06DxpBdVrawTRQP4qT62w",
-                "https://media.licdn.com/dms/image/v2/D5622AQFktiHiyoFpGQ/feedshare-shrink_1280/B56Z0JKAg_H0AM-/0/1773975111975?e=1776297600&v=beta&t=vxKQhtX9M-lU7NYdWp_rprdAyET4zETi-LzHa_UuZuk",
-                "https://media.licdn.com/dms/image/v2/D5622AQFSFmiUfwVqGg/feedshare-shrink_2048_1536/B56Z0JKAnLH8Ak-/0/1773975112422?e=1776297600&v=beta&t=KzRCnJG0SMuNLyfhwXk5752hccX6dXeR3w9M3dkslNI"
-            ],
-            description: "Attended the CIT Alumni Meet, exploring innovative projects and entrepreneurial ideas while engaging with industry leaders and inspiring personalities. Gained valuable insights, mentorship and motivation to apply learnings toward future innovations and team-driven growth.",
-            date: "Mar 2026"
-        },
-        {
-            title: "TNFS National Technical Paper Presentation – VIT Chennai",
-            location: "Onsite",
-            images: [
-                "https://media.licdn.com/dms/image/v2/D5622AQHSCuYIOz4ukw/feedshare-shrink_2048_1536/B56Z0lPf53JgAg-/0/1774446313302?e=1776297600&v=beta&t=4oH9qNM2i62w0Nkjc0tOBzPJw2X7bOFAkPZc8X0SDoc",
-                "https://media.licdn.com/dms/image/v2/D5622AQHN6udlAoMF8A/feedshare-shrink_1280/B56Z0lPf6bJMAM-/0/1774446313396?e=1776297600&v=beta&t=sDwF08guZYds0xaf5TE4uSB0M6HvCNkMeufMGFHn2sY",
-                "https://media.licdn.com/dms/image/v2/D5622AQHCG0xTaq1ZcA/feedshare-shrink_2048_1536/B56Z0lPgx0GYAg-/0/1774446316929?e=1776297600&v=beta&t=7BbEFsrj-QTiUWfkKYj5ufvHMrmFpPAXxP-AAPKT5Mo"
-            ],
-            description: "Participated in the TNFS National Technical Paper Presentation at VIT Chennai, presenting “SmartFire” and securing a place among the Top 23 finalists in the final round. Gained valuable recognition, teamwork experience and motivation to build impactful, technology-driven solutions for real-world challenges.",
-            date: "Mar 2026"
-        }
+         {
+        title: "CIT Alumni Meet 2026",
+        location: "Onsite",
+        images: [
+            "https://media.licdn.com/dms/image/v2/D5622AQFsi9c1OoWK6g/feedshare-shrink_2048_1536/B56Z0JKDwgH0Ao-/0/1773975125568?e=1778112000&v=beta&t=eLJFyC-EtVZ_iWCsmOEYyJXiF-c6-2phlBRWyIO9mqc",
+            "https://media.licdn.com/dms/image/v2/D5622AQFktiHiyoFpGQ/feedshare-shrink_1280/B56Z0JKAg_H0AM-/0/1773975111975?e=1778112000&v=beta&t=9_pyO1wzSs0BdooeNo5ppWRXR7DgHbGlAntGS8JdwJY",
+            "https://media.licdn.com/dms/image/v2/D5622AQFSFmiUfwVqGg/feedshare-shrink_2048_1536/B56Z0JKAnLH8Ak-/0/1773975112422?e=1778112000&v=beta&t=EwZ8Sj9ppJvDWH8ka2pI5BNS_jKXFM7U7dAagDkL-ow"
+        ],
+        description: "Attended the CIT Alumni Meet, exploring innovative projects and entrepreneurial ideas while engaging with industry leaders and inspiring personalities. Gained valuable insights, mentorship and motivation to apply learnings toward future innovations and team-driven growth.",
+        date: "Mar 2026"
+    },
+    {
+        title: "TNFS National Technical Paper Presentation – VIT Chennai",
+        location: "Onsite",
+        images: [
+            "https://media.licdn.com/dms/image/v2/D5622AQHSCuYIOz4ukw/feedshare-shrink_2048_1536/B56Z0lPf53JgAg-/0/1774446313302?e=1778112000&v=beta&t=6_EroFEdVhVUxM1vV6rbhbBi_P-byeVmPm-NazY6CGw",
+            "https://media.licdn.com/dms/image/v2/D5622AQHCG0xTaq1ZcA/feedshare-shrink_2048_1536/B56Z0lPgx0GYAg-/0/1774446316929?e=1778112000&v=beta&t=0iRNVn9HcL0wx6aXK6QMG5le5gmYqiFsEdVuQUpNmQY",
+            "https://media.licdn.com/dms/image/v2/D5622AQHN6udlAoMF8A/feedshare-shrink_1280/B56Z0lPf6bJMAM-/0/1774446313396?e=1778112000&v=beta&t=8Y09-tu3NwsfDm9VXfGW2SRVDeQ-W07bzqz_wNFIX3U"
+        ],
+        description: "Participated in the TNFS National Technical Paper Presentation at VIT Chennai, presenting “SmartFire” and securing a place among the Top 23 finalists in the final round. Gained valuable recognition, teamwork experience and motivation to build impactful, technology-driven solutions for real-world challenges.",
+        date: "Mar 2026"
+    },
+    {
+        title: "Youth Talk 2025",
+        location: "Onsite",
+        images: [
+            "https://media.licdn.com/dms/image/v2/D5622AQHBxGlgcUBRWA/feedshare-shrink_800/B56Zno07hnHUAg-/0/1760547816941?e=1778112000&v=beta&t=BkzH7LXMFEojwG4QcNjtW3uqk7F7AHB4K6a6VZGscgI",
+            "https://media.licdn.com/dms/image/v2/D5622AQEWMx6PbqZqzw/feedshare-shrink_1280/B56Zno07hYI0As-/0/1760547814961?e=1778112000&v=beta&t=TD7xAs1LAwixxMWOyuwMXURelFdns4Mp_NqqNcf-8VM",
+            "https://media.licdn.com/dms/image/v2/D5622AQFXP2LEW5z39w/feedshare-shrink_1280/B56Zno07iGI8As-/0/1760547814909?e=1778112000&v=beta&t=W-yk02gati7jqQ9RzYBYbut9yzdamKX2F1v_22FyvhY"
+        ],
+        description: "Attended Youth Talk 2025 at Coimbatore, gaining insights into the power of communication, leadership and impactful storytelling among young innovators. Inspired to enhance my public speaking and expression skills while embracing opportunities that foster confidence, clarity and meaningful influence.",
+        date: "Nov 2025"
+    },
+    {
+        title: "TN Global Startup Summit 2025",
+        location: "Onsite",
+        images: [
+            "https://media.licdn.com/dms/image/v2/D5622AQGF5gEi5-LKcQ/feedshare-shrink_2048_1536/B56ZnoqtXjJ8Aw-/0/1760545135745?e=1778112000&v=beta&t=-Q62y-zKgcSBQlQbQ1yV0-sS5gh-NCZeoK4RCchu6JA",
+            "https://media.licdn.com/dms/image/v2/D5622AQGU2WQR4twtBg/feedshare-shrink_2048_1536/B56ZnoqtW.JYA4-/0/1760545135547?e=1778112000&v=beta&t=u9Kjn6fXCiM-JTSaEL1Y5l8tRg3HTLyFQL-bFXofE-w",
+            "https://media.licdn.com/dms/image/v2/D5622AQE8Bx5GQ0l5rw/feedshare-shrink_2048_1536/B56ZnoqtXsIsAw-/0/1760545135383?e=1778112000&v=beta&t=m16-_gKBy1t9r_C3cMWvuixaAf8xGDgLdwPYCGmbn18",
+            "https://media.licdn.com/dms/image/v2/D5622AQHAmQN55-Ppjw/feedshare-shrink_1280/B56ZnoqtXVHIAs-/0/1760545135598?e=1778112000&v=beta&t=TWOn_Lni8USyLnw29lo1o2Y3pCnsPr_xW60mSTfAvkg"
+        ],
+        description: "Attended the Tamil Nadu Global Startup Summit 2025, gaining exposure to cutting-edge innovations, startup ecosystems and global entrepreneurial insights. Engaged with industry leaders, expanded my network and strengthened my perspective on building impactful, scalable solutions.",
+        date: "Oct 2025"
+    },
+    {
+        title: "Smart India Hackathon",
+        location: "Internal Presentation",
+        images: [
+            "https://media.licdn.com/dms/image/v2/D5622AQELOGsOM1cLkA/feedshare-shrink_800/B56ZmMTLDpJkAg-/0/1758995460952?e=1778112000&v=beta&t=ESHs3Cu2_a9cIbUiMR4yvNe37Qo_xTICiM_yruxRjRM"
+        ],
+        description: "Presented “EasyML - Democratizing AI for Everyone” at Smart India Hackathon prelims, showcasing a scalable platform that simplifies AI/ML for non-technical users. Gained hands-on experience in building, deploying and pitching an end-to-end solution, strengthening my focus on accessible and impactful AI innovation.",
+        date: "Oct 2025"
+    },
+    {
+        title: "ZARAK 2K25 - HCAS",
+        location: "Onsite",
+        images: [
+            "https://media.licdn.com/dms/image/v2/D5622AQHa_VxLCDkF3A/feedshare-shrink_800/B56ZmMX5PRHUAg-/0/1758996706498?e=1778112000&v=beta&t=aGA4Kug8kKAEZT0Iyu53mzxZ3Al7PP754EjExRtvJW4",
+            "https://media.licdn.com/dms/image/v2/D5622AQHlwcKtbSjgtw/feedshare-shrink_2048_1536/B56ZmMX5O2JkAw-/0/1758996700843?e=1778112000&v=beta&t=hAwRE8hmKxltfnnBPCvdIUViyKS7A0H_AJAflsiAd3Y",
+            "https://media.licdn.com/dms/image/v2/D5622AQHlPX1c9QqBhg/feedshare-shrink_2048_1536/B56ZmMX5PUHAAw-/0/1758996699216?e=1778112000&v=beta&t=Fv8GAVTM90i87Pkg0weOPmcL6hOr5H5TtgmD-3pOg9A",
+            "https://media.licdn.com/dms/image/v2/D5622AQFmHZ7TraHvsg/feedshare-shrink_2048_1536/B56ZmMX5OvJsAw-/0/1758996701652?e=1778112000&v=beta&t=BRa5rBO_DsVoxNxAjk8gfAKMJb3atf5lDlVS3iJPtYA"
+        ],
+        description: "Presented on “The Role of Data Science in Industry 4.0 Manufacturing,” showcasing how AI, IoT and data-driven insights enable predictive maintenance, real-time monitoring and smarter operations. Gained valuable exposure to smart manufacturing innovations and strengthened my vision of integrating AI with industrial transformation.",
+        date: "Sep 2025"
+    },
+    {
+        title: "Youth for Climate Action",
+        location: "Onsite",
+        images: [
+            "https://media.licdn.com/dms/image/v2/D5622AQGSIIIW6b4JmQ/feedshare-shrink_2048_1536/B56Znon6ABG4A0-/0/1760544436183?e=1778112000&v=beta&t=NqbbJrhdO2JYSv1GWzs2gPTnjhfXDJPGiZ_k-yULcdY",
+            "https://media.licdn.com/dms/image/v2/D5622AQEWYuT-ANfuGA/feedshare-shrink_2048_1536/B56Znon6BCJkAw-/0/1760544435325?e=1778112000&v=beta&t=C-bXlWAeQOIrj_4ALoT1Cb2tuQ9Ea_5gKzfvLGzUF54",
+            "https://media.licdn.com/dms/image/v2/D5622AQEzG0WKfr4xMg/feedshare-shrink_2048_1536/B56Znon6B2JoA0-/0/1760544433421?e=1778112000&v=beta&t=QrcKi66YqepQLq7JPjh8U8ivh20s6qQWtUrvlC3ag18"
+        ],
+        description: "Attended Youth for Climate Action — Lead the Change at Sri Eshwar College, a dynamic summit in collaboration with Anna University focused on climate-smart campus initiatives. Gained valuable insights from municipal leaders, academia and student innovators on driving practical, low-carbon solutions. An inspiring experience connecting policy, research and youth-led impact.",
+        date: "Jan 2025"
+    },
+    {
+        title: "PCET Code War  v1.0",
+        location: "Onsite",
+        images: [
+            "https://www.codewar.in/img/CodeWarv1.0/img%20(17).png",
+            "https://www.codewar.in/img/CodeWarv1.0/img%20(6).jpg"
+        ],
+        description: "Participated in a Python-based problem-solving event, successfully addressing the given challenge while actively engaging throughout the session. This experience marked our first event and provided valuable exposure to collaborative learning.",
+        date: "DEC 2023"
+    }
     ],
 
     // ---------------------------------------------------------
@@ -319,7 +318,7 @@ const siteData = {
             name: "Data Analyst Internship Completion",
             organization: "Besant Technologies",
             year: "2025",
-            image: "https://media.licdn.com/dms/image/v2/D5622AQHe5atYSN_OtA/feedshare-shrink_2048_1536/B56ZnZCGzpJwAw-/0/1760282833423?e=1776297600&v=beta&t=5Thiy1TE_h05Oug5OgTjooDcaJL4NICPJyou-PHfLDM",
+            image: "https://media.licdn.com/dms/image/v2/D5622AQHe5atYSN_OtA/feedshare-shrink_800/B56ZnZCGzpJwAg-/0/1760282833339?e=1778112000&v=beta&t=sCM-TfjXjMfEzL9Ml8kqA_0FXChPupf2ZtEW0qA5GIQ",
             link: "#" // Insert real credential link here
         },
         {
@@ -390,7 +389,7 @@ const siteData = {
             name: "Green Skills and AI Foundation",
             organization: "Edunet Foundation - Skil4Future",
             year: "2024",
-            image: "https://media.licdn.com/dms/image/v2/D5622AQEIsUL9eezkhQ/feedshare-shrink_2048_1536/B56ZfE9KToHoAw-/0/1751356058345?e=1776297600&v=beta&t=u9p7eowQxEthy9e14QYuxhGVHbhn25fFpThiiPVVRc4",
+            image: "https://media.licdn.com/dms/image/v2/D5622AQEIsUL9eezkhQ/feedshare-shrink_800/B56ZfE9KToHoAo-/0/1751356058331?e=1778112000&v=beta&t=x4QY4gzczo4RfJBWFvr5-nueVzj9mtZB9cVueZERnpI",
             link: "#" // Insert real credential link here
         }
     ],

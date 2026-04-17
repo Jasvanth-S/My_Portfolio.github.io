@@ -4,11 +4,14 @@ import siteData from '../config/siteData';
 
 const getMediaPreviewUrl = (url) => {
     if (!url || typeof url !== 'string') return url;
-    const driveRegex = /drive\.google\.com\/(?:file\/d\/|open\?id=)([-\w]+)/;
+    
+    // Google drive intercept
+    const driveRegex = /[-\w]{25,}/;
     const match = url.match(driveRegex);
-    if (match && match[1]) {
-        return `https://drive.google.com/thumbnail?id=${match[1]}&sz=w1000`;
+    if (url.includes('drive.google.com') && match) {
+        return `https://drive.google.com/thumbnail?id=${match[0]}&sz=w1000`;
     }
+
     if (url.startsWith('/assets/')) {
         return process.env.PUBLIC_URL + url;
     }

@@ -4,12 +4,14 @@ import siteData from '../config/siteData';
 
 const formatImageUrl = (url) => {
     if (!url || typeof url !== 'string') return url;
-    const driveRegex = /drive\.google\.com\/(?:file\/d\/|open\?id=)([-\w]+)/;
+    
+    // Google drive intercept
+    const driveRegex = /[-\w]{25,}/;
     const match = url.match(driveRegex);
-    if (match && match[1]) {
-        // Use the thumbnail endpoint as it bypasses recent Google hotlink restrictions
-        return `https://drive.google.com/thumbnail?id=${match[1]}&sz=w1000`;
+    if (url.includes('drive.google.com') && match) {
+        return `https://drive.google.com/thumbnail?id=${match[0]}&sz=w1000`;
     }
+
     // Prefix local paths with process.env.PUBLIC_URL so they don't break on GitHub pages (e.g., /portfolio)
     if (url.startsWith('/assets/')) {
         return process.env.PUBLIC_URL + url;
