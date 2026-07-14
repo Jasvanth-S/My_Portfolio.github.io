@@ -480,6 +480,15 @@ const siteData = {
 
     professionalEngagements: [
         {
+            client: "Loga Guest House",
+            summary: "Guest House Booking & Management System",
+            contribution: "Designed and developed a full-stack guest house booking platform using Next.js and Tailwind CSS, featuring online room reservations, role-based admin dashboard, booking management, and SEO-optimized architecture.",
+            impact: "Streamlined reservation management, improved operational efficiency, and enhanced online visibility to increase direct booking opportunities.",
+            image: "https://drive.google.com/file/d/1adwbahEY72YfXSFh6LbehQnPpqFZV50g/view?usp=sharing",
+            link: "https://www.logaguesthouse.com",
+            category: "Full Stack Development"
+        },
+        {
             client: "3D Print With Sruthi",
             summary: "End-to-End E-commerce Platform Development",
             contribution: "Designed and developed a full-stack e-commerce website using Next.js and Tailwind CSS, with role based authentication and integrating Cashfree for secure online payments and seamless checkout experience.",
@@ -489,6 +498,15 @@ const siteData = {
             category: "Full Stack Development"
         },
         {
+            client: "KeyMart Global",
+            summary: "Premium Digital Subscription Retailer, Automated Account Creation and Status Tracking System",
+            contribution: "Developed dedicated account creation and status tracking pages for Adobe and Canva premium subscriptions, integrated with WhatsApp automation to manage and update order status in real time.",
+            impact: "Reduced manual processing, improved operational efficiency and enabled seamless communication and status updates for customers.",
+            image: "https://drive.google.com/uc?export=view&id=1ZV3LwcEBSBssdBzzFmV5e-YfaW5K3M-_",
+            link: "https://www.keymartglobal.in",
+            category: "Automation & Web Development"
+        },
+        {
             client: "Arjun College of Technology",
             summary: "Event Management and Registration Platform for Futurix 2026",
             contribution: "Developed a dynamic event website to showcase event details, department and college information, along with an integrated registration and payment system for seamless participant onboarding.",
@@ -496,15 +514,6 @@ const siteData = {
             image: "https://drive.google.com/uc?export=view&id=1M4sBBsNbVJqSBGlcW3VkUruJw3wqNge1",
             link: "https://act-blogs.github.io/FuturiX_2026/",
             category: "Web Development"
-        },
-        {
-            client: "KeyMart Global",
-            summary: "Premium Digital Subscription Retailer, Automated Account Creation and Status Tracking System",
-            contribution: "Developed dedicated account creation and status tracking pages for Adobe and Canva premium subscriptions, integrated with WhatsApp automation to manage and update order status in real time.",
-            impact: "Reduced manual processing, improved operational efficiency and enabled seamless communication and status updates for customers.",
-            image: "https://drive.google.com/uc?export=view&id=1ZV3LwcEBSBssdBzzFmV5e-YfaW5K3M-_",
-            link: "https://adobe-seller--jasvanth1010.replit.app/",
-            category: "Automation & Web Development"
         }
     ],
 
